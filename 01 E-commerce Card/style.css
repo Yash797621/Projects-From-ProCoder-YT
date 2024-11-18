@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  background-color: #001422;
+}
+
+.circle-1 {
+  position: absolute;
+  top: -50px;
+  left: -60px;
+  background-image: radial-gradient(#EA8BFA, #7526F5);
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.circle-2 {
+  position: absolute;
+  background-image: radial-gradient(#FED0FF, #7F00FF);
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+  bottom: -100px;
+  left: -150px;
+}
+
+.circle-3 {
+  position: absolute;
+  background-image: radial-gradient(#EA8BFA, #7526F5);
+  height: 330px;
+  width: 330px;
+  border-radius: 50%;
+  top: -60px;
+  left: 330px;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card {
+  height: 521px;
+  max-width: 405px;
+  background-color: transparent;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+}
+
+.card-content {
+  height: 484px;
+  width: 368px;
+  border-radius: 11px;
+  border: 1px solid white;
+}
+
+.card-content .context {
+  margin: 20px 20px;
+}
+
+.image img {
+  width: 368px;
+  height: 210px;
+  border-radius: 11px 11px 0px 0px;
+}
+
+.card .course-level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .course-level svg {
+  margin: 0px 10px 0px 0px;
+  padding: 5px;
+  color: #ffffff;
+  /* size: 12px; */
+}
+
+.card .course-level svg:hover{
+  cursor: pointer;
+}
+
+.card .course-level p {
+  color: #ffd147;
+  font-size: 17px;
+  background-color: #ffd14724;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.card .card-content .card-title {
+  padding: 15px 0px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card .card-content .course-by {
+  font-size: 12px;
+}
+
+.card .card-content .course-rating {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.card .card-content .course-rating .stars {
+    padding: 0px 7px 0px 0px;
+}
+
+.card .card-content .course-rating .star {
+    font-size: 20px;
+}
+
+.card .card-content .course-rating p {
+    padding: 5px 10px 0px 5px;
+    margin: 0px;
+}
+
+.card .card-content .course-rating .rating {
+    font-size: 15px;
+    color: #F1C644;
+}
+
+.card .card-content .course-rating .rating-users {
+    font-size: 13px;
+}
+
+.card .card-content .enrolled {
+    height: 100%;
+    border-top: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-content button {
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 8px;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.card .card-content button:hover {
+  cursor: pointer;
+}
+
+
+
+
+

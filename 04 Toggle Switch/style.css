@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.switch-container {
+    width: 32px;
+    height: 11px;
+    background-color: #E0E0E0;
+    border-radius: 100px;
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+    transition: ease-in-out 0.2s;
+    border: 1px solid #E0E0E0;
+    /* box-sizing: border-box; */
+}
+
+.switch-container .checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.switch-container .toggle-slider {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+    position: absolute;
+    left: 1px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2) ;
+    /* transform: translate(2px, 2px); */
+}
+
+.switch-container:has(.checkbox:checked) {
+    background-color: #5128C6;
+    border: 1px solid #5128C6;
+}
+
+.checkbox:checked + .toggle-slider {
+    left: 100%;
+    transform: translate(-100%);
+}
+
+.switch-container:hover {
+    border: 1px solid #4A18D9;
+}
+.switch-container:has(.checkbox:focus) {
+    outline: 2px solid #CFBFFF;
+}
+.switch-container:has(.checkbox:disabled) {
+    background-color: #C2C2C2;
+}
+
+.switch-container:has(.checkbox:disabled):hover {
+    border: none;
+}
+
+/* css before video  */
+
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.switch-container {
+    width: 28px;
+    height: 16px;
+    background-color: #E0E0E0;
+    border-radius: 100px;
+    position: relative;
+    transition: ease-in-out 0.2s;
+}
+
+.switch-container .checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.switch-container .toggle-slider {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+    transform: translate(2px, 2px);
+}
+
+.switch-container:has(.checkbox:checked) {
+    background-color: #5128C6;
+}
+
+.checkbox:checked + .toggle-slider {
+    transform: translate(14px, 2px);
+}
+
+.switch-container:hover {
+    border: 1px solid #4A18D9;
+}
+.switch-container:has(.checkbox:focus) {
+    outline: 2px solid #CFBFFF;
+}
+.switch-container:has(.checkbox:disabled) {
+    background-color: #C2C2C2;
+}
+
+.switch-container:has(.checkbox:disabled):hover {
+    border: none;
+} */

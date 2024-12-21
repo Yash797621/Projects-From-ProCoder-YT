@@ -1,0 +1,2 @@
+For Align all images we changed svgs height in svg file not in css this will not change the size of image they will align in center with out any prblm.
+for given container border same color as the image/svg is hover we used has selector and give the image div diffrent class if container has .mongo img:hover border-color what you want.
